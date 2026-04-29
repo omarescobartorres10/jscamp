@@ -16,34 +16,38 @@
 </head>
 
 <body>
-    <header> <!-- Etiqueta Header: es diferente al head. Es contenido -->
-        <h2>Devjobs</h2>
-        <nav> <!-- Etiqueta Nav: Puede haber muchas etiquetas nav. Es buena practica usar ul o ol dentro de nav -->
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Empleos</a></li>
-                <li><a href="#">Compañías</a></li>
-                <li><a href="#">Salarios</a></li>
+    <header class="header"> <!-- Etiqueta Header: es diferente al head. Es contenido -->
+        <div class="header-logo-container">
+            <svg class="header-logo-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-code"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" /></svg>
+            <h2 class="header-logo-title">Devjobs</h2>
+        </div>
+        
+        <nav class="header-nav"> 
+            <!-- Etiqueta Nav: Puede haber muchas etiquetas nav. Es buena practica usar ul o ol dentro de nav -->
+            <ul class="header-nav-links">
+                <li><a class="header-nav-link" href="index.html">Inicio</a></li>
+                <li><a class="header-nav-link" href="empleos.html">Empleos</a></li>
+                <li><a class="header-nav-link" href="#">Compañías</a></li>
+                <li><a class="header-nav-link" href="#">Salarios</a></li>
             </ul>
         </nav>
 
-        <div> <!--Contenedor para separar elementos visuales. No es sémantico, pero permite aplicar estilos-->
-            <ul>
-                <li><a href="">Publica tu empleo</a></li> <!--Generalmente suelen redirigir a otro sitio o a un formulario-->
-                <li><a href="">Iniciar sesión</a></li> <!--Generalmente suelen redirigir a otro sitio o a un formulario-->
+        <div class="header-actions-container"> <!--Contenedor para separar elementos visuales. No es sémantico, pero permite aplicar estilos-->
+            <ul class="header-actions-links">
+                <li><a class="link-blue" href="">Publica tu empleo</a></li> <!--Generalmente suelen redirigir a otro sitio o a un formulario-->
+                <li><a class="link-white" href="">Iniciar sesión</a></li> <!--Generalmente suelen redirigir a otro sitio o a un formulario-->
             </ul>
         </div>
     </header>
     <main>
-        <section>
+        <section class="hero-section">
+            <h1 class="hero-title">Encuentra el trabajo de tus sueños</h1>
 
-            <img src="../images/background.webp" alt="chicos en una oficina trabajando en computadoras" width="100%"> <!--El uso de WebP es ideal para optimizar el rendimiento técnico de sitios web y aplicaciones.-->
-            <h1>Encuentra el trabajo de tus sueños</h1>
+            <p class="hero-subtitle">Únete a la más grande comunidad de desarrolladores y cuentra tu próxima oportunidad. </p>
 
-            <p>Millones de personas han encontrado el trabajo de sus sueños en DevJobs</p>
-
-            <form role="search"> <!--Hay demasiados atributos que podemos agregar a las etiquetas, los cuales permiten mejorar la acessibilidad y el rendimiento técnico-->
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <form class="hero-search-form" role="search"> <!--Hay demasiados atributos que podemos agregar a las etiquetas, los cuales permiten mejorar la acessibilidad y el rendimiento técnico-->
+                <div class="hero-search-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
                     class="icon icon-tabler icons-tabler-outline icon-tabler-search">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -55,8 +59,11 @@
 
 
 
-                <input type="text" placeholder="Buscar empleos por titulo, habilidad o empresa" required>
-                <button type="submit">Buscar</button>
+                <input class="hero-search-input" type="text" placeholder="Buscar empleos por titulo, habilidad o empresa" required>
+
+                </div>
+                
+                <button class="hero-search-button" type="submit">Buscar</button>
                 <!-- cualquier botón dentro de un formulario siempre será type=submit -->
             </form>
         </section>
