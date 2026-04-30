@@ -183,9 +183,9 @@ html, body {
   color: var(--text-secondary) ;
   padding: 8px;
   gap: 10px;
-  width: 60%;
   background-color: var(--input-bg);
   border-radius: 10px;
+        /* ← NUEVO: que ocupe el ancho disponible hasta 600px */
 
 }
 
@@ -368,24 +368,110 @@ hr {
 }
 
 
-@media (max-width: 375px) {
-  .hero-title {
-    font-size: 1rem;
-  }
-  .feature-cards-section {
-    grid-template-columns: 1fr;
-  }
-  .header{
-    gap: 10px;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-  .hero-search-form{
-    width: 100%;
-  }
-  .hero-section {
-    padding: 3rem 1rem;
-  }
+/*empleos.html*/
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+ 
+}
+
+.hero-section-empleos {
+text-align: center;
+
 
 }
+
+.hero-title {
+  color: var(--text-primary);
+  font-size: 3rem;
+  line-height: 1;  /* Elimina el espaciado extra entre lineas */
+  padding: 1rem;
+}
+
+.hero-subtitle {
+  color: var(--text-secondary);
+  padding: 1rem;
+}
+
+/*empleos.html - Filtros */
+
+.hero-filters-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0rem ;
+}
+
+.hero-filters-section select {
+  background-color: var(--input-bg);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  padding: 8px;
+  border: none;
+  outline: none;
+
+}
+
+/*empleos.html - Resultados*/
+
+.hero-results-section {
+    margin: 0;           /* sin márgenes laterales */
+  padding: 2rem 0;     /* solo espacio arriba/abajo */
+
+}
+
+
+.hero-results-title{
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem;
+}
+
+.hero-results-card {
+  border: 1px solid var(--primary);
+  padding: 1rem;
+  
+}
+
+
+.hero-results-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+   margin-bottom: 1rem;  /* cambia margin por margin-bottom */
+}
+
+.hero-results-card-title {
+  color: var(--text-primary);
+}
+
+.hero-results-card-subtitle {
+  color: var(--text-muted);
+}
+
+
+.hero-results-card-description {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.hero-search-button {
+  background-color: var(--primary-hover);
+  color: var(--text-primary);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+
