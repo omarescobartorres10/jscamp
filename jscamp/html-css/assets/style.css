@@ -33,7 +33,7 @@
 
 html, body {
   font-family: 'Inter Variable', sans-serif;
-  background-color: var(--background);
+  background-color: #101922;
 }
 
 /*index.html - Header*/
@@ -68,10 +68,12 @@ html, body {
 
 .header-nav-links{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
   padding: 14px;
   list-style: none;
-  
+
 }
 
 .header-nav-link{
@@ -114,6 +116,8 @@ html, body {
   border-radius: 10px;
 }
 
+/*index.html - Hero Section*/
+
 .hero-section {
   background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
   url("../images/background.webp");
@@ -138,6 +142,8 @@ html, body {
 .hero-subtitle {
   color: var(--text-secondary);
 }
+
+/*index.html - Search Form*/
 
 .hero-search-form {
   display: flex;
@@ -178,6 +184,119 @@ html, body {
   border-radius: 8px;
 }
 
+/* features-section */
 
+.features-section {
+  padding: 4rem 1rem 1rem;
+}
+
+.features-header-container {
+  text-align: center;
+  
+}
+
+.features-title {
+  color: var(--text-primary);
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.features-subtitle {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/*index.html - Feature Cards*/
+
+.feature-cards-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem;
+  align-items: center;
+  text-align: center;
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+
+
+.feature-card-item {
+  background-color: var(--input-bg);
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,.18);
+  height: 100%;
+}
+
+.feature-card-item:hover{
+  box-shadow: 0 10px 25px rgba(23, 21, 21, 0.25);
+}
+
+.feature-card-item svg {
+  width: 56px;
+  height: 56px;
+  padding: 1rem;
+  color: var(--primary-light);
+  background: var(--primary-dark);
+  border-radius: 100%; 
+  margin: 0 auto 1rem;
+}
+
+
+.feature-card-item-title {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  letter-spacing: .3px;
+  font-weight: 600;
+}
+
+.feature-card-item-description {
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  padding: .5rem;
+}
+
+/*index.html - Media Queries*/
+
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-cards-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px ) {
+  .header{
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .hero-search-form{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 768px ) {
+  .hero-section {
+    padding: 3rem 1rem;
+  }
+
+  .hero-title{
+    font-size: 1.6rem;
+  }
+}
 
 

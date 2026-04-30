@@ -68,41 +68,43 @@
             </form>
         </section>
 
-        <section>
+        <section class="features-section">
             <header> <!--Header semántico: pueden haber headers, footers, navs, etc. dentro de otras etiquetas-->
-                <h2>¿Por qué DevJobs</h2>
-                <p>Bienvenido a DevJobs, la plataforma líder para conectar talento en tecnología con las mejores
+                <div class="features-header-container">
+                    <h2 class="features-title">¿Por qué DevJobs</h2>
+                    <p class="features-subtitle">Bienvenido a DevJobs, la plataforma líder para conectar talento en tecnología con las mejores
                     oportunidades laborales.</p>
+                </div>
+                
             </header>
 
 
+            <div class="feature-cards-section">
+                <article class="feature-card-item"> <!--Article es un contenido independiente y autocontenido. Funciona en cualquier parte de la página-->
+                  
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-briefcase-2"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 9a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /></svg>
 
-                <article> <!--Article es un contenido independiente y autocontenido. Funciona en cualquier parte de la página-->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-briefcase-2"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 9a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /></svg>
-                    <h3>Encuentra ofertas relevantes</h3>
-                    <p>Accede a cientos de ofertas verificadas en empresas de tecnología de todos los tamaños, desde
-                        startups innovadoras hasta corporaciones consolidadas.</p>
+                    <h3 class="feature-card-item-title">Encuentra el trabajo de tus sueños</h3>
+                    <p class="feature-card-item-description">Busca miles de empleos de las mejores empresas de todo el mundo</p>
                 </article>
 
-                <article>
+                <article class="feature-card-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg>
-                    <h3>Encuentra el trabajo de tus sueños</h3>
-                    <p>Usa nuestros filtros inteligentes y alertas personalizadas para recibir notificaciones sobre las
-                        oportunidades que realmente importan para tu carrera.</p>
+                    <h3 class="feature-card-item-title">Conecta con las mejores empresas</h3>
+                    <p class="feature-card-item-description">Conecta con empresas que están contratando por tus habilidades .</p>
                 </article>
 
-                <article>
+                <article class="feature-card-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-building-skyscraper"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 21l18 0" /><path d="M5 21v-14l8 -4v18" /><path d="M19 21v-10l-6 -4" /><path d="M9 9l0 .01" /><path d="M9 12l0 .01" /><path d="M9 15l0 .01" /><path d="M9 18l0 .01" /></svg>
-                    <h3>Obten el trabajo que mereces</h3>
-                    <p>Presenta tu perfil de manera profesional con un currículum optimizado, testimonios, portafolio y
-                        proyectos destacados.</p>
+                    <h3 class="feature-card-item-title">Obten el salario que mereces</h3>
+                    <p class="feature-card-item-description">Obtén el salaio que mereces con nuestra calculadora de Salarios</p>
                 </article>
+            </div>
         </section>
 
     </main>
-    <footer>
-        <small>©2026 Devjobs. Todos los derechos reservados. - Creado por la cohorte 5 de JSCamp 2026</small> <!--small permite usar texto pequeño. Usar para textos legales o de copyright o información que no es relevante para el usuario-->
+    <footer class="footer">
+        <small class="footer-text">©2026 Devjobs. Todos los derechos reservados. - Creado por la cohorte 5 de JSCamp 2026</small> <!--small permite usar texto pequeño. Usar para textos legales o de copyright o información que no es relevante para el usuario-->
     </footer>
 </body>
-
 </html>
