@@ -19,9 +19,7 @@
                 <path d="M14 4l-4 16" />
             </svg>
             <h2 class="header-logo-title">Devjobs</h2>
-        </div>
-
-        <nav class="header-nav">
+            <nav class="header-nav">
             <ul class="header-nav-links">
                 <li><a class="header-nav-link" href="index.html">Inicio</a></li>
                 <li><a class="header-nav-link" href="empleos.html">Empleos</a></li>
@@ -30,6 +28,9 @@
             </ul>
         </nav>
 
+        </div>
+
+        
         <div class="header-actions-container">
             <ul class="header-actions-links">
                 <li><a class="link-blue" href="#">Subir CV</a></li>
@@ -48,7 +49,7 @@
                 <h1 class="hero-title">Encuentra tu próximo trabajo</h1>
                 <p class="hero-subtitle">Explora miles de oportunidades en el sector tecnológico</p>
 
-                <form class="hero-search-form" role="search">
+                <form class="hero-search-form-empleos" role="search">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -56,7 +57,7 @@
                         <path d="M21 21l-6 -6" />
                     </svg>
                     <input class="hero-search-input" type="text"
-                        placeholder="Buscar empleos por título, habilidad o empresa" required>
+                        placeholder="Buscar trabajos, empresas o habilidades" required>
                 </form>
 
                 <div class="hero-filters-section">
@@ -93,54 +94,54 @@
         </section>
 
         <!-- SECCIÓN RESULTADOS -->
-        <section class="hero-results-section">
+        <section class="results-section">
             <div class="container">
-                <h2 class="hero-results-title">Resultados de búsqueda</h2>
+                <h2 class="results-title">Resultados de búsqueda</h2>
 
-                <article class="hero-results-card">
-                    <div class="hero-results-card-content">
-                        <h4 class="hero-results-card-title">Ingeniero de software</h4>
-                        <h5 class="hero-results-card-subtitle">Tech-solutions Inc | Remoto</h5>
+                <article class="results-card">
+                    <div class="results-card-content">
+                        <h4 class="results-card-title">Ingeniero de software</h4>
+                        <h5 class="results-card-subtitle">Tech-solutions Inc | Remoto</h5>
                     </div>
-                    <div class="hero-results-card-content">
-                        <p class="hero-results-card-description">Estamos buscando un ingeniero de software con
+                    <div class="results-card-content">
+                        <p class="results-card-description">Estamos buscando un ingeniero de software con
                             experiencia en desarrollo web. El candidato ideal tendrá experiencia en HTML, CSS,
                             JavaScript.</p>
                     </div>
                     <button class="hero-search-button" type="button">Aplicar</button>
                 </article>
 
-                <article class="hero-results-card">
-                    <div class="hero-results-card-content">
-                        <h4 class="hero-results-card-title">Analista de Datos</h4>
-                        <h5 class="hero-results-card-subtitle">Data-solutions Inc | Presencial</h5>
+                <article class="results-card">
+                    <div class="results-card-content">
+                        <h4 class="results-card-title">Analista de Datos</h4>
+                        <h5 class="results-card-subtitle">Data-solutions Inc | Presencial</h5>
                     </div>
-                    <div class="hero-results-card-content">
-                        <p class="hero-results-card-description">Estamos buscando un analista de datos con experiencia
+                    <div class="results-card-content">
+                        <p class="results-card-description">Estamos buscando un analista de datos con experiencia
                             en análisis de datos. El candidato ideal tendrá experiencia en Python, SQL, R.</p>
                     </div>
                     <button class="hero-search-button" type="button">Aplicar</button>
                 </article>
 
-                <article class="hero-results-card">
-                    <div class="hero-results-card-content">
-                        <h4 class="hero-results-card-title">Desarrollador móvil</h4>
-                        <h5 class="hero-results-card-subtitle">Mobile-solutions Inc | Presencial</h5>
+                <article class="results-card">
+                    <div class="results-card-content">
+                        <h4 class="results-card-title">Desarrollador móvil</h4>
+                        <h5 class="results-card-subtitle">Mobile-solutions Inc | Presencial</h5>
                     </div>
-                    <div class="hero-results-card-content">
-                        <p class="hero-results-card-description">Estamos buscando un desarrollador móvil con experiencia
+                    <div class="results-card-content">
+                        <p class="results-card-description">Estamos buscando un desarrollador móvil con experiencia
                             en desarrollo móvil. El candidato ideal tendrá experiencia en Java, Kotlin, Swift.</p>
                     </div>
                     <button class="hero-search-button" type="button">Aplicar</button>
                 </article>
 
-                <article class="hero-results-card">
-                    <div class="hero-results-card-content">
-                        <h4 class="hero-results-card-title">Ingeniero DevOps</h4>
-                        <h5 class="hero-results-card-subtitle">Cloud Services | Remoto</h5>
+                <article class="results-card">
+                    <div class="results-card-content">
+                        <h4 class="results-card-title">Ingeniero DevOps</h4>
+                        <h5 class="results-card-subtitle">Cloud Services | Remoto</h5>
                     </div>
-                    <div class="hero-results-card-content">
-                        <p class="hero-results-card-description">Estamos buscando un ingeniero DevOps con experiencia en
+                    <div class="results-card-content">
+                        <p class="results-card-description">Estamos buscando un ingeniero DevOps con experiencia en
                             DevOps. El candidato ideal tendrá experiencia en AWS, Azure, GCP.</p>
                     </div>
                     <button class="hero-search-button" type="button">Aplicar</button>
@@ -151,14 +152,14 @@
 
     <footer>
         <div class="container">
-            <nav class="hero-pagination-container">
-                <ul class="hero-pagination-links">
-                    <li class="hero-pagination-link-item"><a class="hero-pagination-link" href="#">1</a></li>
-                    <li class="hero-pagination-link-item"><a class="hero-pagination-link" href="#">2</a></li>
-                    <li class="hero-pagination-link-item"><a class="hero-pagination-link" href="#">3</a></li>
-                    <li class="hero-pagination-link-item"><a class="hero-pagination-link" href="#">4</a></li>
-                    <li class="hero-pagination-link-item"><a class="hero-pagination-link" href="#">5</a></li>
-                    <li class="hero-pagination-link-item"><a class="hero-pagination-link" href="#">></a></li>
+            <nav class="pagination-container">
+                <ul class="pagination-links">
+                    <li class="pagination-link-item"><a class="pagination-link" href="#">1</a></li>
+                    <li class="pagination-link-item"><a class="pagination-link" href="#">2</a></li>
+                    <li class="pagination-link-item"><a class="pagination-link" href="#">3</a></li>
+                    <li class="pagination-link-item"><a class="pagination-link" href="#">4</a></li>
+                    <li class="pagination-link-item"><a class="pagination-link" href="#">5</a></li>
+                    <li class="pagination-link-item"><a class="pagination-link" href="#">></a></li>
                 </ul>
 
             </nav>
