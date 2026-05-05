@@ -26,11 +26,15 @@
 const resultsSection = document.querySelectorAll(".results-card");
 const filterTechs = document.querySelector("#filter-techs");
 const filterUbicacion = document.querySelector("#filter-ubicacion");
+const filterTipoContrato = document.querySelector("#filter-tipo-contrato");
+const filterExperiencia = document.querySelector("#filter-experiencia");
 
 function filtrar() {
   
   const filterValueTechs = filterTechs.value.toLowerCase();
   const filterValueUbicacion = filterUbicacion.value.toLowerCase();
+  const filterValueTipoContrato = filterTipoContrato.value.toLowerCase();
+  const filterValueExperiencia = filterExperiencia.value.toLowerCase();
 
   resultsSection.forEach(card => {
     const title = card
@@ -44,7 +48,22 @@ function filtrar() {
       .textContent
       .toLowerCase();
 
-      const shouldShow = (filterValueTechs === "" || title.includes(filterValueTechs)) && (filterValueUbicacion === "" || ubicacion.includes(filterValueUbicacion)); 
+      const tipoContrato = card
+      .querySelector(".results-card-subtitle")
+      .textContent
+      .toLowerCase();
+
+      const experiencia = card
+      .querySelector(".results-card-subtitle")
+      .textContent
+      .toLowerCase();
+
+
+      const shouldShow =
+       (filterValueTechs === "" || title.includes(filterValueTechs)) &&
+       (filterValueUbicacion === "" || ubicacion.includes(filterValueUbicacion)) &&
+       (filterValueTipoContrato === "" || tipoContrato.includes(filterValueTipoContrato)) &&
+       (filterValueExperiencia === "" || experiencia.includes(filterValueExperiencia));
 
       card.style.display = shouldShow ? "" : "none";
 
@@ -54,6 +73,8 @@ function filtrar() {
 
 filterTechs.addEventListener("change", filtrar);
 filterUbicacion.addEventListener("change", filtrar);
+filterTipoContrato.addEventListener("change", filtrar);
+filterExperiencia.addEventListener("change", filtrar);
 
 
 
