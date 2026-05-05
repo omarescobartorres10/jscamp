@@ -23,32 +23,38 @@
 //    }
 // });
 
-
-const obtenerResultadosCartas = document.querySelectorAll(".results-card");
-
+const resultsSection = document.querySelectorAll(".results-card");
 const filterTechs = document.querySelector("#filter-techs");
+const filterUbicacion = document.querySelector("#filter-ubicacion");
 
-filterTechs?.addEventListener("change", function() {
-  const optionSelected = filterTechs.value.toLowerCase();
-
-    // console.log(obtenerResultadosCartas);
-obtenerResultadosCartas.forEach(card => {
+function filtrar() {
   
+  const filterValueTechs = filterTechs.value.toLowerCase();
+  const filterValueUbicacion = filterUbicacion.value.toLowerCase();
 
-  
-    if(card.querySelector(".results-card-title").textContent.toLowerCase().includes(optionSelected)) {
+  resultsSection.forEach(card => {
+    const title = card
+      .querySelector(".results-card-title")
+      .textContent
+      .toLowerCase();
+
+
+      const ubicacion = card
+      .querySelector(".results-card-subtitle")
+      .textContent
+      .toLowerCase();
+
+      const shouldShow = (filterValueTechs === "" || title.includes(filterValueTechs)) && (filterValueUbicacion === "" || ubicacion.includes(filterValueUbicacion)); 
+
+      card.style.display = shouldShow ? "" : "none";
+
     
-    card.style.display = ""; //Para ocultar la carta
+  });
+}
 
-  } else {
+filterTechs.addEventListener("change", filtrar);
+filterUbicacion.addEventListener("change", filtrar);
 
-    card.style.display = "none"; //Para mostrar la carta
-  }
-  })
-
-
-
-})
 
 
 
