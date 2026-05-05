@@ -5,7 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="./script.js"></script>
+
     <title>DevJobs - Empleos</title>
+
 </head>
 
 <body>
@@ -61,33 +64,33 @@
                 </form>
 
                 <div class="hero-filters-section">
-                    <select name="tecnologías">
+                    <select name="tecnologías" id="filter-techs">
                         <option value="">Tecnologías</option>
-                        <option>Frontend</option>
-                        <option>Backend</option>
-                        <option>Fullstack</option>
-                        <option>Data Science</option>
-                        <option>DevOps</option>
-                        <option>Mobile</option>
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                        <option value="fullstack">Fullstack</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="devops">DevOps</option>
+                        <option value="mobile">Mobile</option>
                     </select>
-                    <select name="ubicación">
+                    <select name="ubicación" id="filter-ubicacion">
                         <option value="">Ubicación</option>
-                        <option>Remoto</option>
-                        <option>Presencial</option>
-                        <option>Híbrido</option>
+                        <option value="remoto">Remoto</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="hibrido">Híbrido</option>
                     </select>
-                    <select name="tipo-contrato">
+                    <select name="tipo-contrato" id="filter-tipo-contrato">
                         <option value="">Tipo de Contrato</option>
-                        <option>Tiempo Completo</option>
-                        <option>Medio Tiempo</option>
-                        <option>Por Proyecto</option>
+                        <option value="tiempo-completo">Tiempo Completo</option>
+                        <option value="medio-tiempo">Medio Tiempo</option>
+                        <option value="por-proyecto">Por Proyecto</option>
                     </select>
-                    <select name="experiencia">
+                    <select name="experiencia" id="filter-experiencia">
                         <option value="">Experiencia</option>
-                        <option>Sin experiencia</option>
-                        <option>Junior</option>
-                        <option>Mid</option>
-                        <option>Senior</option>
+                        <option value="sin-experiencia">Sin experiencia</option>
+                        <option value="junior">Junior</option>
+                        <option value="mid">Mid</option>
+                        <option value="senior">Senior</option>
                     </select>
                 </div>
             </div>
@@ -100,61 +103,61 @@
 
                 <article class="results-card">
                     <div class="results-card-content">
-                        <h4 class="results-card-title">Ingeniero de software</h4>
+                        <h4 class="results-card-title">Ingeniero de software Frontend</h4>
                         <div>
-                            <button class="hero-search-button" type="button">Aplicar</button>
+                            <button class="btn-blue-apply-job" type="button">Aplicar</button>
                         </div>
                     </div>
                     <div class="results-card-content">
-                        <h5 class="results-card-subtitle">Tech-solutions Inc | Remoto</h5>
-                        
+                        <h5 class="results-card-subtitle">Tech-solutions Inc | Remoto </h5>
+
                     </div>
                     <p class="results-card-description">Estamos buscando un ingeniero de software con
-                            experiencia en desarrollo web. El candidato ideal tendrá experiencia en HTML, CSS,
-                            JavaScript.</p>
+                        experiencia en desarrollo web. El candidato ideal tendrá experiencia en HTML, CSS,
+                        JavaScript.</p>
                 </article>
 
                 <article class="results-card">
                     <div class="results-card-content">
                         <h4 class="results-card-title">Analista de Datos</h4>
                         <div>
-                            <button class="hero-search-button" type="button">Aplicar</button>
+                            <button class="btn-blue-apply-job" type="button">Aplicar</button>
                         </div>
                     </div>
                     <div class="results-card-content">
                         <h5 class="results-card-subtitle">Data-solutions Inc | Presencial</h5>
-                        
+
                     </div>
                     <p class="results-card-description">Estamos buscando un analista de datos con experiencia
-                            en análisis de datos. El candidato ideal tendrá experiencia en Python, SQL, R.</p>
+                        en análisis de datos. El candidato ideal tendrá experiencia en Python, SQL, R.</p>
                 </article>
 
                 <article class="results-card">
                     <div class="results-card-content">
                         <h4 class="results-card-title">Desarrollador móvil</h4>
                         <div>
-                            <button class="hero-search-button" type="button">Aplicar</button>
+                            <button class="btn-blue-apply-job" type="button">Aplicar</button>
                         </div>
                     </div>
                     <div class="results-card-content">
-                        <h5 class="results-card-subtitle">Mobile-solutions Inc | Presencial</h5> 
+                        <h5 class="results-card-subtitle">Mobile-solutions Inc | Presencial</h5>
                     </div>
                     <p class="results-card-description">Estamos buscando un desarrollador móvil con experiencia
-                            en desarrollo móvil. El candidato ideal tendrá experiencia en Java, Kotlin, Swift.</p>
+                        en desarrollo móvil. El candidato ideal tendrá experiencia en Java, Kotlin, Swift.</p>
                 </article>
 
                 <article class="results-card">
                     <div class="results-card-content">
                         <h4 class="results-card-title">Ingeniero DevOps</h4>
                         <div>
-                            <button class="hero-search-button" type="button">Aplicar</button>
+                            <button class="btn-blue-apply-job" type="button">Aplicar</button>
                         </div>
                     </div>
                     <div class="results-card-content">
-                        <h5 class="results-card-subtitle">Cloud Services | Remoto</h5> 
+                        <h5 class="results-card-subtitle">Cloud Services | Remoto</h5>
                     </div>
                     <p class="results-card-description">Estamos buscando un ingeniero DevOps con experiencia en
-                            DevOps. El candidato ideal tendrá experiencia en AWS, Azure, GCP.</p>
+                        DevOps. El candidato ideal tendrá experiencia en AWS, Azure, GCP.</p>
                 </article>
             </div>
         </section>
@@ -176,5 +179,6 @@
         </div>
     </footer>
 </body>
+
 
 </html>

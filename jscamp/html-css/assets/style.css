@@ -149,6 +149,9 @@ html, body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
+
+
+
 /*index.html - Hero Section*/
 
 .hero-section {
@@ -209,16 +212,36 @@ html, body {
   width:100%;
 }
 
-.hero-search-button {
-
+.btn-blue {
   background: var(--primary-hover);
   color: var(--text-primary);
   border: none;
   padding: 8px 16px;
   border-radius: 8px;
   cursor: pointer;  /* Indica que el elemento es interactivo */
+  transition: all .5s ease;
 }
 
+.btn-blue:hover{
+  transform: scale(1.1);
+}
+
+
+
+.btn-blue-apply-job{
+  background: var(--primary-hover);
+  color: var(--text-primary);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;  /* Indica que el elemento es interactivo */
+  transition: all .5s ease;
+  align-self: center;
+}
+
+.btn-blue-apply-job:hover{
+  transform: scale(1.1);
+}
 
 /* features-section */
 
@@ -420,8 +443,20 @@ text-align: center;
 .results-card {
   border: 1px solid var(--primary);
   padding: 1rem;
+}
+
+
+.results-card:first-child {
+  background: #0d5ba8;
+}
+
+
+.results-card:last-child {
+  border-radius: 0 0 10px 10px;
+  color: red;
   
 }
+
 
 
 .results-card-content {
@@ -463,6 +498,12 @@ text-align: center;
   border-radius: 8px;
   cursor: pointer;
 }
+
+
+#btn-analista-datos {
+  background-color: #dc2626; /* Rojo */
+}
+
 
 .search-button:hover {
   background-color: var(--primary-dark);
