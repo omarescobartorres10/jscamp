@@ -67,9 +67,9 @@
                     <select name="tecnologías" id="filter-techs">
                         <option value="">Tecnologías</option>
                         <option value="Frontend">Frontend</option>
-                        <option value="Analista de Datos">Analista de Datos</option>
-                        <option value="Desarrollador movil">Desarrollador movil</option>
-                        <option value="Ingeniero DevOps">Ingeniero DevOps</option>
+                        <option value="Analista">Analista de Datos</option>
+                        <option value="Movil">Desarrollador movil</option>
+                        <option value="DevOps">Ingeniero DevOps</option>
                     </select>
                     <select name="ubicación" id="filter-ubicacion">
                         <option value="">Ubicación</option>
@@ -79,13 +79,13 @@
                     </select>
                     <select name="tipo-contrato" id="filter-tipo-contrato">
                         <option value="">Tipo de Contrato</option>
-                        <option value="tiempo-completo">Tiempo Completo</option>
-                        <option value="medio-tiempo">Medio Tiempo</option>
-                        <option value="por-proyecto">Por Proyecto</option>
+                        <option value="tiempo completo">Tiempo Completo</option>
+                        <option value="medio tiempo">Medio Tiempo</option>
+                        <option value="por proyecto">Por Proyecto</option>
                     </select>
                     <select name="experiencia" id="filter-experiencia">
                         <option value="">Experiencia</option>
-                        <option value="sin-experiencia">Sin experiencia</option>
+                        <option value="sin experiencia">Sin experiencia</option>
                         <option value="junior">Junior</option>
                         <option value="mid">Mid</option>
                         <option value="senior">Senior</option>
@@ -98,8 +98,13 @@
         <section class="results-section">
             <div class="container">
                 <h2 class="results-title">Resultados de búsqueda</h2>
+                <p id="results-count"></p>
+                <div id="results-container"></div>
+                
+                 
 
-                <article class="results-card">
+
+                <!-- <article class="results-card">
                     <div class="results-card-content">
                         <h4 class="results-card-title">Ingeniero de software Frontend</h4>
                         <div>
@@ -158,7 +163,7 @@
                     </div>
                     <p class="results-card-description">Estamos buscando un ingeniero DevOps con experiencia en
                         DevOps. El candidato ideal tendrá experiencia en AWS, Azure, GCP.</p>
-                </article>
+                </article> -->
             </div>
         </section>
     </main>

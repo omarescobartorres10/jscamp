@@ -424,6 +424,17 @@ text-align: center;
 
 /*empleos.html - Resultados*/
 
+
+#results-count{
+  color: var(--text-primary);
+  font-size: .9rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-align: left;
+  margin: 1rem;
+}
+
+
 .results-section {
     margin: 0;           /* sin márgenes laterales */
   padding: 2rem 0;     /* solo espacio arriba/abajo */
@@ -445,15 +456,15 @@ text-align: center;
   padding: 1rem;
 }
 
-
 .results-card:first-child {
-  background: #0d5ba8;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 
 .results-card:last-child {
-  border-radius: 0 0 10px 10px;
-  color: red;
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
   
 }
 
