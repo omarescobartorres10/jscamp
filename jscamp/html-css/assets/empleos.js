@@ -44,7 +44,7 @@ container.addEventListener("click", (event) => {
     if (!boton) return;
     const id = parseInt(boton.dataset.id);  // conviértelo a número por si acaso
     let empleoEncontrado = empleos.find(empleo => empleo.id === id)
-    alert(`Aplicaste a ${empleoEncontrado.titulo}`) // 
+    window.location.href = `aplicar.html?id=${id}`;
 });
 
 const filterTechs = document.getElementById("filter-techs");
