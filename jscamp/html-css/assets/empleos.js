@@ -1,16 +1,21 @@
 const empleos = [
-    { id: 1, titulo: "Frontend Developer", empresa: "Google" },
-    { id: 2, titulo: "Backend Developer", empresa: "Amazon" },
-    { id: 3, titulo: "Fullstack Developer", empresa: "Microsoft" },
-    { id: 4, titulo: "Data Scientist", empresa: "Meta" },
-    { id: 5, titulo: "Mobile Developer", empresa: "Apple" }
+    { id: 1, titulo: "Frontend Developer", empresa: "Google", ubicacion: "remoto" },
+    { id: 2, titulo: "Backend Developer", empresa: "Amazon", ubicacion: "remoto" },
+    { id: 3, titulo: "Fullstack Developer", empresa: "Microsoft", ubicacion: "presencial" },
+    { id: 4, titulo: "Data Scientist", empresa: "Meta", ubicacion: "hibrido" },
+    { id: 5, titulo: "Mobile Developer", empresa: "Apple", ubicacion: "presencial" }
 ];
 
 const container = document.querySelector("#results-container");
 
 
 
-empleos.forEach(empleo => {
+function pintarCards(listaEmpleos) {
+
+    container.innerHTML = "";
+
+
+    listaEmpleos.forEach(empleo => {
     const card = document.createElement("article"); //Se crea un article
     card.classList.add("results-card"); //Se le asigna la clase results-card
     const div = document.createElement("div"); //Se crea un div
@@ -31,11 +36,43 @@ empleos.forEach(empleo => {
     container.appendChild(card); //Se agrega el card al contenedor
 });
 
+}
+
 container.addEventListener("click", (event) => {
     const elementoClickeado = event.target;
     const boton = elementoClickeado.closest(".btn-blue-apply-job");
     if (!boton) return;
     const id = parseInt(boton.dataset.id);  // conviértelo a número por si acaso
     let empleoEncontrado = empleos.find(empleo => empleo.id === id)
-    alert(`Aplicaste a ${empleoEncontrado.titulo}`)
+    alert(`Aplicaste a ${empleoEncontrado.titulo}`) // 
 });
+
+const filterTechs = document.getElementById("filter-techs");
+const filterUbicacion = document.getElementById("filter-ubicacion");
+
+
+function aplicarFiltros(){
+    const tech = filterTechs.value.trim().toLowerCase();
+    const ubi = filterUbicacion.value.trim().toLowerCase();
+
+    console.log("aplicarFiltros ejecutada");
+
+    const filtrados = empleos.filter(empleo => {
+        
+        const cumpleTech = (tech === "") || empleo.titulo.toLowerCase().includes(tech);
+        const cumpleUbi = (ubi === "") || empleo.ubicacion.toLowerCase().includes(ubi);
+        return cumpleTech && cumpleUbi;
+
+        
+    });
+
+    pintarCards(filtrados);
+}
+
+filterTechs.addEventListener("change", aplicarFiltros);
+filterUbicacion.addEventListener("change", aplicarFiltros);
+
+pintarCards(empleos)
+
+
+
