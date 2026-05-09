@@ -2,7 +2,7 @@ const empleos = [
     {
         id: 1,
         titulo: "Frontend Developer",
-        empresa: "Google",
+        empresa: "Google.",
         ubicacion: "remoto",
         tipoContrato: "Tiempo completo",
         experiencia: "Senior",
@@ -26,7 +26,7 @@ const empleos = [
     {
         id: 2,
         titulo: "Backend Developer",
-        empresa: "Amazon",
+        empresa: "Amazon.",
         ubicacion: "remoto",
         tipoContrato: "Por proyecto",
         experiencia: "Mid",
@@ -50,7 +50,7 @@ const empleos = [
     {
         id: 3,
         titulo: "Fullstack Developer",
-        empresa: "Microsoft",
+        empresa: "Microsoft.",
         ubicacion: "presencial",
         tipoContrato: "Medio tiempo",
         experiencia: "Junior",
@@ -74,7 +74,7 @@ const empleos = [
     {
         id: 4,
         titulo: "Data Scientist",
-        empresa: "Meta",
+        empresa: "Meta.",
         ubicacion: "hibrido",
         tipoContrato: "Por proyecto",
         experiencia: "Junior",
@@ -98,7 +98,7 @@ const empleos = [
     {
         id: 5,
         titulo: "Mobile Developer",
-        empresa: "Apple",
+        empresa: "Apple.",
         ubicacion: "presencial",
         tipoContrato: "Tiempo completo",
         experiencia: "Senior",
@@ -140,7 +140,7 @@ const trabajo = empleos.find(empleo => empleo.id == id);
 
 if (trabajo) {
     applytitle.textContent = trabajo.titulo;
-    applysubtitle.textContent = `${trabajo.empresa} | ${trabajo.ubicacion}`;
+    applysubtitle.textContent = `${trabajo.empresa} ˙ ${trabajo.ubicacion}`;
     applydescription.textContent = trabajo.descripcion;
     aboutCompanyDescription.textContent = trabajo.sobreLaEmpresa;
 } else {
@@ -151,21 +151,66 @@ responsabilitiesList.innerHTML = "";
 requirementsList.innerHTML = "";
 
 
+function crearIconoCheck() {
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("width", "24");
+    svg.setAttribute("height", "24");
+    svg.setAttribute("viewBox", "0 0 24 24");
+    svg.setAttribute("fill", "none");
+    svg.setAttribute("stroke", "currentColor");
+    svg.setAttribute("stroke-width", "1.4");
+    svg.setAttribute("stroke-linecap", "round");
+    svg.setAttribute("stroke-linejoin", "round");
+    svg.classList.add("icon", "icon-tabler", "icons-tabler-outline", "icon-tabler-circle-check");
+    
+    const path1 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path1.setAttribute("stroke", "none");
+    path1.setAttribute("d", "M0 0h24v24H0z");
+    path1.setAttribute("fill", "none");
+    
+    const path2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path2.setAttribute("d", "M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0");
+    
+    const path3 = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path3.setAttribute("d", "M9 12l2 2l4 -4");
+    
+    svg.appendChild(path1);
+    svg.appendChild(path2);
+    svg.appendChild(path3);
+    
+    return svg;
+}
+
+
+// Ejemplo: Agregar el icono a cada responsabilidad
 trabajo.responsabilidades.forEach(item => {
     const li = document.createElement("li");
-    li.textContent = item;
-    responsabilitiesList.classList.add("responsabilities-list-item"); //AGREGAR CLASE PARA PODER USAR LOS ESTILOS DE CSS
+    li.classList.add("responsabilities-list-item");
+    
+    // Agregar el icono
+    const icono = crearIconoCheck();
+    li.appendChild(icono);
+    
+    // Agregar el texto
+    const texto = document.createTextNode(` ${item}`);
+    li.appendChild(texto);
+    
     responsabilitiesList.appendChild(li);
-})
+});
 
+// Hacer lo mismo para requisitos
 trabajo.requisitos.forEach(item => {
     const li = document.createElement("li");
-    li.textContent = item;
-    requirementsList.classList.add("requirements-list-item");
+    li.classList.add("requirements-list-item");
+    
+    const icono = crearIconoCheck();
+    li.appendChild(icono);
+    
+    const texto = document.createTextNode(` ${item}`);
+    li.appendChild(texto);
+    
     requirementsList.appendChild(li);
-})
-
-
+});
 
 
 

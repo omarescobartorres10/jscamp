@@ -2,7 +2,7 @@ const empleos = [
     {
         id: 1,
         titulo: "Frontend Developer",
-        empresa: "Google",
+        empresa: "Google.",
         ubicacion: "remoto",
         tipoContrato: "Tiempo completo",
         experiencia: "Senior",
@@ -26,7 +26,7 @@ const empleos = [
     {
         id: 2,
         titulo: "Backend Developer",
-        empresa: "Amazon",
+        empresa: "Amazon.",
         ubicacion: "remoto",
         tipoContrato: "Por proyecto",
         experiencia: "Mid",
@@ -50,7 +50,7 @@ const empleos = [
     {
         id: 3,
         titulo: "Fullstack Developer",
-        empresa: "Microsoft",
+        empresa: "Microsoft.",
         ubicacion: "presencial",
         tipoContrato: "Medio tiempo",
         experiencia: "Junior",
@@ -74,7 +74,7 @@ const empleos = [
     {
         id: 4,
         titulo: "Data Scientist",
-        empresa: "Meta",
+        empresa: "Meta.",
         ubicacion: "hibrido",
         tipoContrato: "Por proyecto",
         experiencia: "Junior",
@@ -98,7 +98,7 @@ const empleos = [
     {
         id: 5,
         titulo: "Mobile Developer",
-        empresa: "Apple",
+        empresa: "Apple.",
         ubicacion: "presencial",
         tipoContrato: "Tiempo completo",
         experiencia: "Senior",

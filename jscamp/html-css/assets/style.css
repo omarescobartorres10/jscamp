@@ -351,11 +351,9 @@ hr {
 
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 1.5rem;
-
- 
 }
 
 .header-actions-profile-pic {
@@ -521,9 +519,6 @@ text-align: center;
 }
 
 
-
-
-
 /*emplos.html - Paginación*/
 
 .pagination-container {
@@ -554,6 +549,137 @@ text-align: center;
 .pagination-link:hover {
   background-color: var(--primary-hover);
   color: var(--text-primary);
+}
+
+
+/*aplicar.html ------------------------------------*/ 
+
+.apply-page-content {
+  margin: 0;
+  padding: 2rem;
+}
+
+.apply-page-title {
+  font-size: 2.2rem;
+  color: var(--text-primary);
+  padding: 1rem 0;
+}
+
+
+.apply-title{
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+
+}
+
+.apply-page-subtitle{
+  color: var(--text-muted);
+  margin-bottom: 40px;
+}
+
+.apply-page-description{
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  white-space: 1.3rem;
+  line-height: 1.8;
+  
+}
+
+.responsabilities-section {
+  margin-bottom: 2rem;
+}
+
+
+.apply-list {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+
+}
+
+.responsabilities-section {
+  margin-bottom: 2rem;
+}
+
+
+
+.responsabilities-list-item {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  list-style: none;
+  line-height: 1.8;
+}
+
+
+.requirements-section {
+  margin-bottom: 2rem;
+}
+
+
+
+.requirements-title {
+  color: var(--text-primary);
+  font-size: 1rem;  
+  font-weight: 700;
+  line-height: 1.1;
+
+}
+
+.requirements-list {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  list-style: none;
+  white-space: 1.5rem;
+
+
+}
+
+.requirements-list-item {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+
+.about-company-title{
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+
+.about-company-description{
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.responsabilities-list-item,
+.requirements-list-item {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.responsabilities-list-item svg,
+.requirements-list-item svg {
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+    color: var(--primary-light); /* Color verde para el check */
+}
+
+.icon-check {
+    width: 20px;
+    height: 20px;
 }
 
 
