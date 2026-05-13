@@ -118,8 +118,31 @@
             "Inglés intermedio."
         ],
         "sobreLaEmpresa": "Apple es una empresa que cree en el poder de la tecnología para enriquecer la vida de las personas. Fomentamos la creatividad, la innovación y la excelencia en el diseño."
+    },
+    {
+        "id": 6,
+        "titulo": "Desarrollador de Software Frontend",
+        "empresa": "Globant",
+        "ubicacion": "hibrido",
+        "tipoContrato": "Tiempo completo",
+        "experiencia": "Semi-Senior",
+        "descripcion": "Globant busca un Desarrollador de Software Frontend apasionado por crear experiencias inmersivas. Trabajarás con el motor Unity para desarrollar mecánicas innovadoras y mantener la calidad visual en títulos AAA. Buscamos a alguien que disfrute colaborar en equipos creativos y técnicos.",
+        "responsabilidades": [
+            "Diseñar y desarrollar interfaces de usuario intuitivas y atractivas con React y TypeScript.",
+            "Optimizar el rendimiento gráfico y de memoria en diferentes plataformas.",
+            "Colaborar con diseñadores UX/UI para traducir wireframes en experiencias interactivas de alta fidelidad.",
+            "Resolver bugs y asegurar la estabilidad del juego antes del lanzamiento.",
+            "Trabajar con APIs REST y servicios en la nube (AWS/Azure).",
+            "Escribir código limpio, mantenible y con buenas prácticas de testing.",
+            "Participar en revisiones de código y mentoring a desarrolladores junior."
+        ],
+        "requisitos": [
+            "Experiencia de al menos 3 años con React y TypeScript.",
+            "Conocimiento de frameworks de testing como Jest o React Testing Library.",
+            "Conocimiento de sistemas de control de versiones (Git).",
+            "Conocimiento de metodologías ágiles.",
+            "Portafolio de proyectos personales o comerciales."
+        ],
+        "sobreLaEmpresa": "Globant es una empresa líder en transformación digital, especializada en la creación de productos de software innovadores. Impulsamos la transformación digital de las empresas, creando experiencias únicas para sus clientes."
     }
-
 ]
-
-

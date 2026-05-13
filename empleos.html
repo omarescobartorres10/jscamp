@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
-    
+
     <title>DevJobs - Empleos</title>
 
 </head>
@@ -34,12 +34,16 @@
 
 
         <div class="header-actions-container">
+            <ul class="header-actions-links">
+                <li class="link-blue"><a class="header-nav-link" href="#">Subir CV</a></li>
+                <devjobs-avatar>
+                    service="github"
+                    username="midudev"
+                    size="32"
+                </devjobs-avatar>
+            </ul>
 
-           <devjobs-avatar>
-            service="github" 
-            username="midudev"
-            size="32"
-           </devjobs-avatar>
+
         </div>
 
     </header>
@@ -106,13 +110,8 @@
     <footer>
         <div class="container">
             <nav class="pagination-container">
-                <ul class="pagination-links">
-                    <li class="pagination-link-item"><a class="pagination-link" href="#">1</a></li>
-                    <li class="pagination-link-item"><a class="pagination-link" href="#">2</a></li>
-                    <li class="pagination-link-item"><a class="pagination-link" href="#">3</a></li>
-                    <li class="pagination-link-item"><a class="pagination-link" href="#">4</a></li>
-                    <li class="pagination-link-item"><a class="pagination-link" href="#">5</a></li>
-                    <li class="pagination-link-item"><a class="pagination-link" href="#">></a></li>
+                <ul id="pagination-links" class="pagination-links">
+                    <!-- buttons added dynamically -->
                 </ul>
 
             </nav>
@@ -121,4 +120,5 @@
     <script type="module" src="./empleos.js"></script>
     <script src="devjobs-avatar-element.js" type="module"></script>
 </body>
+
 </html>
