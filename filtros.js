@@ -28,3 +28,6 @@ function aplicarFiltros(empleos, inputBuscar, filterTechs, filterUbicacion, filt
 
 
 export { aplicarFiltros };
+
+
+
