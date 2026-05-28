@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://imaginative-semifreddo-4d8a32.netlify.app/sitemap.xml
