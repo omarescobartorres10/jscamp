@@ -39,7 +39,7 @@ function crearIconoCheck() {
 }
 
 
-fetch("./empleos.json")
+fetch("src/data/empleos.json")
     .then(response => response.json())
     .then(data => {
         empleos = data;

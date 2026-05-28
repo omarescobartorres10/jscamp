@@ -69,7 +69,7 @@ function mostrarEmpleos() {
 
 async function cargarEmpleos() {
     try {
-        const respuesta = await fetch("./empleos.json");
+        const respuesta = await fetch("src/data/empleos.json");
         const data = await respuesta.json();
         empleos = data;
         generarPaginacion(empleos.length);
